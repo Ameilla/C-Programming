@@ -1,0 +1,32 @@
+#include<stdio.h>
+main()
+{
+    int num1,num2;
+    char op;
+    printf("Enter an operator (+,-,*,/,%) - ");
+    scanf("%c",&op);
+    if((op=='+'||op=='-'||op=='*'||op=='/'||op=='%'))
+    {
+        printf("Enter the first number ");
+        scanf("%d",&num1);
+        printf("Enter the second number ");
+        scanf("%d",&num2);
+        switch(op)
+        {
+        case '+':
+            printf("Addition of %d + %d = %d",num1,num2,num1+num2);
+        case '-':
+            printf("Subtraction of %d - %d = %d",num1,num2,num1-num2);
+        case '*':
+            printf("Multiplication of %d * %d = %d",num1,num2,num1*num2);
+        case '/':
+            printf("Quotient of %d / %d = %d",num1,num2,num1/num2);
+        case '%':
+            printf("Remainder of %d % %d = %d",num1,num2,num1%num2);
+        }
+    }
+    else
+    {
+        printf("Invalid Operator");
+    }
+}
