@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+    int num,rev=0,right;
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        right=num%10;
+        rev=rev*10+right;
+        num=num/10;
+    }
+    printf("%d",rev);
+    int arr[10];
+    scanf("%s",&arr);
+    printf("%s",strrev(arr));
+}
